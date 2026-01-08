@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+/* size/typography */
+@import '@primer/primitives/dist/css/primitives.css';
+
+/* motion */
+@import '@primer/primitives/dist/css/base/motion/motion.css';
+
+/* theme colors */
+@import '@primer/primitives/dist/css/functional/themes/light.css';
+@import '@primer/primitives/dist/css/functional/themes/dark-dimmed.css';
+
+@import './fonts.css';
+
+@custom-variant dark (&:where([data-color-mode="dark"], [data-color-mode="dark-dimmed"] *));
+
+:root {
+  --fontStack-sansSerif:
+    'Inter-var', 'Inter', --apple-system, system-ui, sans-serif;
+  --fontStack-sansSerifDisplay:
+    'Inter-var', 'Inter', --apple-system, system-ui, sans-serif;
+  --fontStack-system:
+    'Inter-var', 'Inter', --apple-system, system-ui, sans-serif;
+  --BaseStyles-fontFamily:
+    'Inter-var', 'Inter', --apple-system, system-ui, sans-serif;
+}
+
+@theme {
+  --font-default: var(--fontStack-system);
+}
+
+body {
+  font: var(--text-body-shorthand-large);
+}
