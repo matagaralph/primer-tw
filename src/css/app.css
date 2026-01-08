@@ -7,11 +7,11 @@
 
 /* theme colors */
 @import '@primer/primitives/dist/css/functional/themes/light.css';
-@import '@primer/primitives/dist/css/functional/themes/dark-dimmed.css';
+@import '@primer/primitives/dist/css/functional/themes/dark.css';
 
 @import './fonts.css';
 
-@custom-variant dark (&:where([data-color-mode="dark"], [data-color-mode="dark-dimmed"] *));
+@custom-variant dark (&:where([data-color-mode="dark"], [data-color-mode="dark"] *));
 
 :root {
   --fontStack-sansSerif:

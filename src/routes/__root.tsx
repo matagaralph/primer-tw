@@ -3,7 +3,7 @@ import { createRootRoute, Outlet } from '@tanstack/react-router';
 
 const RootLayout = () => {
   return (
-    <ThemeProvider preventSSRMismatch>
+    <ThemeProvider colorMode='light' preventSSRMismatch>
       <BaseStyles>
         <Outlet />
       </BaseStyles>

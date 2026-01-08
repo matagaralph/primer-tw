@@ -22,11 +22,6 @@ function IndexPage() {
               <Button variant='primary'>Button</Button>
               <Button variant='invisible'>Button</Button>
             </Stack>
-            {/* <div className='flex items-center gap-3 mb-2'>
-              <Button variant='danger'>Button</Button>
-              <Button variant='primary'>Button</Button>
-              <Button variant='invisible'>Button</Button>
-            </div> */}
           </UnderlinePanels.Panel>
           <UnderlinePanels.Panel className='p-4!'>
             <Blankslate>
