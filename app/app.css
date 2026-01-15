@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+/* size/typography */
+@import '@primer/primitives/dist/css/primitives.css';
+
+/* motion */
+@import '@primer/primitives/dist/css/base/motion/motion.css';
+
+/* theme colors */
+@import '@primer/primitives/dist/css/functional/themes/light.css';
+@import '@primer/primitives/dist/css/functional/themes/dark-dimmed.css';
+
+@custom-variant dark (&:where([data-color-mode="dark"], [data-color-mode="dark"] *));
+
+:root {
+  --fontStack-sansSerif: 'Inter-var', 'Inter', --apple-system, system-ui,
+    sans-serif;
+  --fontStack-sansSerifDisplay: 'Inter-var', 'Inter', --apple-system, system-ui,
+    sans-serif;
+  --fontStack-system: 'Inter-var', 'Inter', --apple-system, system-ui,
+    sans-serif;
+  --BaseStyles-fontFamily: 'Inter-var', 'Inter', --apple-system, system-ui,
+    sans-serif;
+  /* --fgColor-default: oklch(0.2723 0.0079 264.43); */
+}
+
+@theme inline {
+  --font-default: var(--fontStack-system);
+
+  /* Colors */
+  --color-default: var(--fgColor-default);
+  --color-danger: var(--fgColor-danger);
+  --color-success: var(--fgColor-success);
+  --color-link: var(--fgColor-link);
+  --color-muted: var(--fgColor-muted);
+
+  /* Borders */
+  --border-color-default: var(--borderColor-default);
+  --border-color-muted: var(--borderColor-muted);
+  --border-color-disabled: var(--borderColor-disabled);
+
+  /* Background */
+  --background-color-muted: var(--bgColor-muted);
+  --background-color-disabled: var(--bgColor-disabled);
+  --background-color-default: var(--bgColor-default);
+
+  /* Shadows */
+  --shadow-floating-large: var(--shadow-floating-large);
+  --shadow-floating-legacy: var(--shadow-floating-legacy);
+  --shadow-floating-medium: var(--shadow-floating-medium);
+  --shadow-floating-small: var(--shadow-floating-small);
+  --shadow-floating-xlarge: var(--shadow-floating-xlarge);
+  --shadow-inset: var(--shadow-inset);
+  --shadow-resting-medium: var(--shadow-resting-medium);
+  --shadow-resting-small: var(--shadow-resting-small);
+  --shadow-resting-xsmall: var(--shadow-resting-xsmall);
+}
+
+body {
+  font: var(--text-body-shorthand-large);
+  color: var(--fgColor-default);
+  background-color: var(--bgColor-default);
+}
